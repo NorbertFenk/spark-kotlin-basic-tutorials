@@ -1,5 +1,7 @@
 package app
 
+import spark.Spark.get
+
 fun main(args : Array<String>) {
-    println("Hello world")
+    get ("/hello") { req, res -> "hello world" }
 }
